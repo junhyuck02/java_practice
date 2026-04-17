@@ -2,7 +2,7 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        System.out.println("Lest's go!!!");
+        System.out.println("Let's go!!!");
         System.out.println("유후!");
     }
 }
