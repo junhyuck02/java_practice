@@ -19,7 +19,7 @@ public class Solution4 {
             num1 = scanner.nextInt();
             num2 = scanner.nextInt();
 
-            if (num1 > 0 && num1 <= 100 && num2 >0 && num2 <= 100) {
+            if (num1 > 0 && num1 <= 100 && num2 > 0 && num2 <= 100) {
                 break;
             }
             System.out.println("다시 입력하세요.");
