@@ -22,7 +22,7 @@ public class Solution2 {
             if(size > 0 && size < 100 && (size % 2 == 1)){
                 numbers = new int[size];
                 for(int i = 0; i < numbers.length; i++){
-                    System.out.print(("배열의 요소를 입력하세요: "));
+                    System.out.print("배열의 요소를 입력하세요: ");
                     int check = scanner.nextInt();
 
                     if(check > -1000 && check < 1000){
