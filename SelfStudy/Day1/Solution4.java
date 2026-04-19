@@ -12,7 +12,7 @@ public class Solution4 {
     public static void main(String[] args) {
 
         Scanner scanner  = new Scanner(System.in);
-        int num1, num2, result = 0;
+        int num1 = 0, num2 = 0, result = 0;
 
         while (true) {
             System.out.print("두 개의 정수를 입력하세요 (1 ~ 100): ");
