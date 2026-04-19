@@ -24,7 +24,7 @@ public class Solution4 {
             if(size >= 1 && size <= 1000){
                 numbers = new int[size];
                 for(int j = 0; j < numbers.length; j++){
-                    System.out.print(("배열의 요소를 입력하세요: "));
+                    System.out.print("배열의 요소를 입력하세요: ");
                     int check = scanner.nextInt();
 
                     if(check >= -10000 && check <= 10000){
