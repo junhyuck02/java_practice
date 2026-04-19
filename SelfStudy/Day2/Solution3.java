@@ -19,7 +19,7 @@ public class Solution3 {
     public static void main(String[] args) {
         
         Scanner scanner  = new Scanner(System.in); 
-        int numer1, denom1, numer2, denom2 = 0;
+        int numer1 = 0, denom1 = 0, numer2 = 0, denom2 = 0;
         int result[] = {};
 
         while (true) {
