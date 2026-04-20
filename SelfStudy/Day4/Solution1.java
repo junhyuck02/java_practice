@@ -30,6 +30,7 @@ public class Solution1 {
                 break;
             } else {
                 System.out.println("다시 입력하세요");
+                continue;
             }   
         }
         scanner.close();
