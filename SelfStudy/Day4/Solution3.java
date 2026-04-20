@@ -23,18 +23,25 @@ public class Solution3 {
         while(true){
             System.out.print("조각 수를 입력하세요:");
             int slice = scanner.nextInt();
+
             if(slice >= 2 && slice <= 10){
-                System.out.print("사람 수를 입력하세요: ");
-                int n = scanner.nextInt();
-                if(n >= 1 && n <= 100){
-                    result = new Solution3().solution(slice,n);
-                    System.out.println("필요한 피자는 " + result + "판입니다.");
-                    break;
-                } else {
-                    System.out.println("다시 입력하세요");
-                }   
+
+                while(true){
+                    System.out.print("사람 수를 입력하세요: ");
+                    int n = scanner.nextInt();
+                    if(n >= 1 && n <= 100){
+                        result = new Solution3().solution(slice,n);
+                        System.out.println("필요한 피자는 " + result + "판입니다.");
+                        break;
+                    } else {
+                        System.out.println("다시 입력하세요");
+                        continue;
+                    } 
+                }
+                break;
             } else{
                 System.out.println("다시 입력하세요");
+                continue;
             }
         }
         scanner.close();
