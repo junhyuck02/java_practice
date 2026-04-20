@@ -31,6 +31,7 @@ public class Solution4 {
                 break;
             } else {
                 System.out.println("다시 입력하세요");
+                continue;
             }   
         }
         System.out.println(Arrays.toString(numbers));
