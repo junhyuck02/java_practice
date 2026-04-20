@@ -38,13 +38,14 @@ public class Solution3 {
                         numbers[i] = check;
                     } else {
                         System.out.println("다시 입력하세요");
-                        break;
+                        i--;
                     }
                 }
                 break;
                     
             } else {
                 System.out.println("다시 입력하세요");
+                continue;
             }
             
         }
