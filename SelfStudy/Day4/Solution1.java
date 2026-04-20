@@ -23,9 +23,9 @@ public class Solution1 {
 
         while(true){
             System.out.print("사람 수를 입력하세요: ");
-            int num = scanner.nextInt();
-            if(num >= 1 && num <= 100){
-                result = new Solution1().solution(num);
+            int n = scanner.nextInt();
+            if(n >= 1 && n <= 100){
+                result = new Solution1().solution(n);
                 System.out.println("필요한 피자는 " + result + "판입니다.");
                 break;
             } else {
