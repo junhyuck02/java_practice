@@ -34,6 +34,7 @@ public class Solution2 { // 최소공배수를 구하고 6으로 나누기
                 break;
             } else {
                 System.out.println("다시 입력하세요");
+                continue;
             }   
         }
         scanner.close();
