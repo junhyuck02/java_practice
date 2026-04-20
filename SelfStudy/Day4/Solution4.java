@@ -40,12 +40,10 @@ public class Solution4 {
                             System.out.println("평균값은: " + average + "입니다.");
                         } else{
                             System.out.println("다시 입력하세요");
-                            break; 
                         }
 
                     } else {
                         System.out.println("다시 입력하세요");
-                        break;
                     }
                 }
                 break;
