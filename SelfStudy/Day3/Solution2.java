@@ -29,7 +29,7 @@ public class Solution2 {
                         numbers[i] = check;
                     } else {
                         System.out.println("다시 입력하세요");
-                        break;
+                        i--;
                     }
                     
                 }
@@ -37,6 +37,7 @@ public class Solution2 {
                     
             } else {
                 System.out.println("다시 입력하세요");
+                continue;
             }
             
         }
