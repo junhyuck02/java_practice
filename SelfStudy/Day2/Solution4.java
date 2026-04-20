@@ -31,21 +31,20 @@ public class Solution4 {
                         numbers[j] = check;
                     } else {
                         System.out.println("다시 입력하세요");
-                        break;
+                        j--;
                     }
-                
                 }
-                
                 numbers = new Solution4().solution(numbers);
                 for(int i = 0; i < numbers.length; i++){
                     System.out.print(numbers[i] + " ");
                 }
-            } else {
-                System.out.println("다시 입력하세요");
                 break;
             }
+            else {
+                System.out.println("다시 입력하세요");
+                continue;
+            }
         }
-
         scanner.close();
 
         
