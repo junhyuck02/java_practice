@@ -9,7 +9,7 @@ public class Solution2 {
         while(true){
             int n = scanner.nextInt();
             
-            if(n >= 1 && n <= 10){
+            if(n >= 1 && n <= 10){ // repeat() 사용해보기
                 for(int i = 1; i <= n; i++){ 
                     for(int j = 0; j < i; j++){ 
                         System.out.print("*");
