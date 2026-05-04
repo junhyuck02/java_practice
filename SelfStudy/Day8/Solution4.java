@@ -29,5 +29,6 @@ public class Solution4 {
                 System.out.println("다시 입력하세요.");
             }
         }
+        scanner.close();
     }
 }
