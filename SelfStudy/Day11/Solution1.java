@@ -44,7 +44,7 @@ public class Solution1 {
         }
 
         int result = sol.solution(box, n);
-        System.out.println("📦 상자에 들어갈 수 있는 최대 주사위 개수: " + result + "개");
+        System.out.println("상자에 들어갈 수 있는 최대 주사위 개수: " + result + "개");
 
         scanner.close();
     }
