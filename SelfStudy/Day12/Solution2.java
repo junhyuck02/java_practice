@@ -44,6 +44,7 @@ public class Solution2 {
             int len = input.length();
             if (len >= 1 && len <= 100) {
                 if (input.matches("^[a-z0-9]*$")) {
+
                     if (input.matches(".*[0-9].*")) {
                         break;
                     } else {
@@ -52,7 +53,8 @@ public class Solution2 {
                 } else {
                     System.out.println("소문자와 숫자만 입력 가능합니다.");
                 }
-            } else {
+            } 
+            else {
                 System.out.println("길이는 1에서 100 사이여야 합니다.");
             }
         }
