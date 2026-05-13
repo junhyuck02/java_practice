@@ -26,7 +26,7 @@ public class Solution3 {
         String input = "";
 
         while (true) {
-            System.out.println("문자열을 입력하세요:");
+            System.out.print("문자열을 입력하세요:");
             input = scanner.nextLine();
 
             int len = input.length();
@@ -45,7 +45,7 @@ public class Solution3 {
         }
 
         int result = sol.solution(input);
-        System.out.println("✨ 문자열 안의 숫자 합계: " + result);
+        System.out.println("문자열 안의 숫자 합계: " + result);
 
         scanner.close();
     }
