@@ -1,4 +1,4 @@
-package SelfStudy.Day11;
+package Step1.Day11;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ public class Solution1 {
         answer = (box[0] / n) * (box[1] / n) * (box[2] / n);
         return answer;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Solution1 sol = new Solution1();
@@ -15,7 +16,7 @@ public class Solution1 {
         int[] box = new int[3];
         int n = 0;
 
-        String[] labels = {"가로", "세로", "높이"};
+        String[] labels = { "가로", "세로", "높이" };
         for (int i = 0; i < 3; i++) {
             while (true) {
                 System.out.print("상자의 " + labels[i] + " 길이를 입력하세요 (1~100): ");

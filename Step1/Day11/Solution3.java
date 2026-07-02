@@ -1,4 +1,4 @@
-package SelfStudy.Day11;
+package Step1.Day11;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ public class Solution3 {
     public int solution(int[] numbers) {
         int answer = 0;
         Arrays.sort(numbers);
-        answer  = numbers[numbers.length - 1] * numbers[numbers.length - 2];
+        answer = numbers[numbers.length - 1] * numbers[numbers.length - 2];
         return answer;
     }
 

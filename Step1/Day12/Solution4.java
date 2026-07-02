@@ -1,4 +1,4 @@
-package SelfStudy.Day12;
+package Step1.Day12;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -11,36 +11,37 @@ public class Solution4 {
         Set<Integer> set = new LinkedHashSet<>();
         int divisor = 2;
 
-        while(n > 1){
-            if(n % divisor == 0){
+        while (n > 1) {
+            if (n % divisor == 0) {
                 set.add(divisor);
                 n = n / divisor;
-            }else{
+            } else {
                 divisor++;
             }
         }
         answer = new int[set.size()];
         int index = 0;
-        for(int num : set){
+        for (int num : set) {
             answer[index++] = num;
         }
 
         return answer;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Solution4 sol = new Solution4();
         int n = 0;
         int[] result = {};
 
-        while(true){
+        while (true) {
             System.out.print("n을 입력하세요:");
             n = scanner.nextInt();
-            if(n >= 2 && n <= 10000){
+            if (n >= 2 && n <= 10000) {
                 result = sol.solution(n);
                 System.out.println(Arrays.toString(result));
                 break;
-            } else{
+            } else {
                 System.out.println("다시 입력하세요.");
             }
         }

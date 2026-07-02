@@ -1,14 +1,14 @@
-package SelfStudy.Day13;
+package Step1.Day13;
 
 import java.util.Scanner;
 
 public class Solution3 {
     public String solution(String my_string) {
         String answer = "";
-        
+
         for (int i = 0; i < my_string.length(); i++) {
             String current = String.valueOf(my_string.charAt(i));
-            
+
             if (!answer.contains(current)) {
                 answer += current;
             }

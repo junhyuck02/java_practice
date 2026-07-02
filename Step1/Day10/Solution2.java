@@ -1,4 +1,4 @@
-package SelfStudy.Day10;
+package Step1.Day10;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,8 +8,8 @@ public class Solution2 {
         int temp = num_list.length / n;
         int[][] answer = new int[temp][n];
         int k = 0;
-        for(int i = 0; i < temp; i++){
-            for(int j = 0; j < n; j++){
+        for (int i = 0; i < temp; i++) {
+            for (int j = 0; j < n; j++) {
                 answer[i][j] = num_list[k];
                 k++;
             }
@@ -23,21 +23,21 @@ public class Solution2 {
         int length = 0, n = 0;
         int[] num_list = {};
 
-        while(true){
+        while (true) {
             System.out.print("배열의 길이를 입력하세요: ");
             length = scanner.nextInt();
-            if(length < 0 || length > 150){
+            if (length < 0 || length > 150) {
                 System.out.println("다시 입력하세요");
                 continue;
-            } else{
+            } else {
                 num_list = new int[length];
             }
 
             System.out.print("n을 입력하세요: ");
             n = scanner.nextInt();
-            if(n >= 2 && n < length && length % n == 0){
+            if (n >= 2 && n < length && length % n == 0) {
                 break;
-            } else{
+            } else {
                 System.out.println("다시 입력하세요");
             }
         }
@@ -50,10 +50,9 @@ public class Solution2 {
         int[][] result = sol.solution(num_list, n);
 
         System.out.println(Arrays.deepToString(result));
-        
+
         scanner.close();
 
     }
-
 
 }

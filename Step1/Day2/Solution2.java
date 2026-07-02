@@ -1,10 +1,10 @@
-package SelfStudy.Day2;
+package Step1.Day2;
 
 import java.util.Scanner;
 
 class Solution2 {
     public int solution(int num1, int num2) {
-        if(num1 == num2){
+        if (num1 == num2) {
             return 1;
         } else {
             return -1;
@@ -13,7 +13,7 @@ class Solution2 {
 
     public static void main(String[] args) {
 
-        Scanner scanner  = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
         int num1 = 0, num2 = 0, result = 0;
 
         while (true) {
@@ -26,13 +26,12 @@ class Solution2 {
             }
             System.out.println("다시 입력하세요.");
         }
-            
+
         Solution2 s = new Solution2();
         result = s.solution(num1, num2);
         System.out.println(result);
         scanner.close();
 
     }
-
 
 }

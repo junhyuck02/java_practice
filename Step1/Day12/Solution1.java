@@ -1,30 +1,33 @@
-package SelfStudy.Day12;
+package Step1.Day12;
 
 import java.util.Scanner;
 
 public class Solution1 {
     public String solution(String my_string) {
         String answer = "";
-        if(my_string.contains("a"))
-            my_string = my_string.replace("a","");
-        if(my_string.contains("e"))
-            my_string = my_string.replace("e","");
-        if(my_string.contains("i"))
-            my_string = my_string.replace("i","");
-        if(my_string.contains("o"))
-            my_string = my_string.replace("o","");
-        if(my_string.contains("u"))
-            my_string = my_string.replace("u","");
+        if (my_string.contains("a"))
+            my_string = my_string.replace("a", "");
+        if (my_string.contains("e"))
+            my_string = my_string.replace("e", "");
+        if (my_string.contains("i"))
+            my_string = my_string.replace("i", "");
+        if (my_string.contains("o"))
+            my_string = my_string.replace("o", "");
+        if (my_string.contains("u"))
+            my_string = my_string.replace("u", "");
         answer = my_string;
         // answer = my_string.replaceAll("[aeiou]", "");
-        /*String[] vowels = new String[]{"a", "e", "i", "o", "u"};
-        for(String vowel : vowels){
-            if(my_string.contains(vowel)){
-                my_string = my_string.replace(vowel, "");
-            }
-        }*/
+        /*
+         * String[] vowels = new String[]{"a", "e", "i", "o", "u"};
+         * for(String vowel : vowels){
+         * if(my_string.contains(vowel)){
+         * my_string = my_string.replace(vowel, "");
+         * }
+         * }
+         */
         return answer;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Solution1 sol = new Solution1();
@@ -32,9 +35,9 @@ public class Solution1 {
 
         while (true) {
             System.out.print("문자열을 입력하세요 (길이 1~1,000, 소문자와 공백만 가능):");
-            my_string = scanner.nextLine(); 
+            my_string = scanner.nextLine();
             int len = my_string.length();
-            
+
             if (len >= 1 && len <= 1000 && my_string.matches("^[a-z ]*$")) {
                 break;
             } else {

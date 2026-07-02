@@ -1,4 +1,4 @@
-package SelfStudy.Day10;
+package Step1.Day10;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class Solution4 {
     public int[] solution(int[] numbers, String direction) {
         int[] answer = new int[numbers.length];
-        if(direction.equals("right")){
-            for(int i = 0;i < numbers.length;i++){
-                if(i == numbers.length - 1){
+        if (direction.equals("right")) {
+            for (int i = 0; i < numbers.length; i++) {
+                if (i == numbers.length - 1) {
                     answer[0] = numbers[i];
                     break;
                 }
                 answer[i + 1] = numbers[i];
             }
-        } else if(direction.equals("left")){
+        } else if (direction.equals("left")) {
             answer[numbers.length - 1] = numbers[0];
-    
-            for(int i = 1; i < numbers.length; i++){
+
+            for (int i = 1; i < numbers.length; i++) {
                 answer[i - 1] = numbers[i];
             }
         }
@@ -32,7 +32,7 @@ public class Solution4 {
         while (true) {
             System.out.print("배열의 길이를 입력하세요: ");
             len = scanner.nextInt();
-            
+
             if (len >= 3 && len <= 20) {
                 break;
             } else {
@@ -52,7 +52,7 @@ public class Solution4 {
         while (true) {
             System.out.print("회전 방향을 입력하세요 (left/right): ");
             direction = scanner.nextLine();
-            
+
             if (direction.equals("left") || direction.equals("right")) {
                 break;
             } else {
@@ -65,5 +65,5 @@ public class Solution4 {
 
         scanner.close();
     }
-    
+
 }

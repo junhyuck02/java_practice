@@ -1,4 +1,4 @@
-package SelfStudy.Day7;
+package Step1.Day7;
 
 import java.util.Scanner;
 

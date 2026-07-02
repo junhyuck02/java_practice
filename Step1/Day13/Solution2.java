@@ -1,4 +1,4 @@
-package SelfStudy.Day13;
+package Step1.Day13;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Solution2 {
     public int[] solution(String[] strlist) {
         int[] answer = new int[strlist.length];
-        for(int i = 0; i < strlist.length; i++){
+        for (int i = 0; i < strlist.length; i++) {
             answer[i] = strlist[i].length();
         }
         return answer;
@@ -17,7 +17,7 @@ public class Solution2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Solution2 sol = new Solution2();
-        
+
         List<String> inputList = new ArrayList<>();
 
         System.out.println("단어들을 하나씩 입력하세요.");

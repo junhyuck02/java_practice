@@ -1,4 +1,4 @@
-package SelfStudy.Day5;
+package Step1.Day5;
 
 import java.util.Scanner;
 
@@ -22,9 +22,9 @@ public class Solution2 {
             System.out.print("돈을 입력하세요: ");
             money = scanner.nextInt();
             if (money > 0 && money <= 1000000) {
-                arr =  new Solution2().solution(money);
+                arr = new Solution2().solution(money);
                 break;
-            } else{
+            } else {
                 System.out.println("다시 입력하세요.");
                 continue;
             }

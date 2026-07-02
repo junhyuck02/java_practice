@@ -1,17 +1,18 @@
-package SelfStudy.Day1;
+package Step1.Day1;
 
 import java.util.Scanner;
 
 public class Solution3 {
 
-    public int solution(int num1, int num2){
+    public int solution(int num1, int num2) {
         int result = 0;
         result = num1 * num2;
         return result;
     }
+
     public static void main(String[] args) {
 
-        Scanner scanner  = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int num1 = 0, num2 = 0, result = 0;
 
         while (true) {
@@ -19,12 +20,12 @@ public class Solution3 {
             num1 = scanner.nextInt();
             num2 = scanner.nextInt();
 
-            if (num1 >= 0 && num1 <= 100 && num2 >=0 && num2 <= 100) {
+            if (num1 >= 0 && num1 <= 100 && num2 >= 0 && num2 <= 100) {
                 break;
             }
             System.out.println("다시 입력하세요.");
         }
-            
+
         Solution3 s = new Solution3();
         result = s.solution(num1, num2);
         System.out.println("두 수의 곱은: " + result + "입니다.");

@@ -1,4 +1,4 @@
-package SelfStudy.Day10;
+package Step1.Day10;
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ public class Solution1 {
     public int solution(int[] dot) {
         int answer = 0;
 
-        if(dot[0] > 0 && dot[1] > 0){
+        if (dot[0] > 0 && dot[1] > 0) {
             answer = 1;
-        } else if(dot[0] < 0 && dot[1] > 0){
+        } else if (dot[0] < 0 && dot[1] > 0) {
             answer = 2;
-        } else if(dot[0] < 0 && dot[1] < 0){
+        } else if (dot[0] < 0 && dot[1] < 0) {
             answer = 3;
-        } else if(dot[0] > 0 && dot[1] < 0){
+        } else if (dot[0] > 0 && dot[1] < 0) {
             answer = 4;
         }
         return answer;
@@ -23,7 +23,7 @@ public class Solution1 {
         Scanner scanner = new Scanner(System.in);
         int[] dot = new int[2];
 
-        while(true){
+        while (true) {
             System.out.print("x 좌표 입력: ");
             dot[0] = scanner.nextInt();
             System.out.print("y 좌표 입력: ");

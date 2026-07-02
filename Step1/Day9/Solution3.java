@@ -1,4 +1,4 @@
-package SelfStudy.Day9;
+package Step1.Day9;
 
 import java.util.Scanner;
 
@@ -6,14 +6,12 @@ public class Solution3 {
     public String solution(String rsp) {
         String[] arr = rsp.split("");
         String answer = "";
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i].equals("2")){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals("2")) {
                 arr[i] = "0";
-            }
-            else if(arr[i].equals("0")){
+            } else if (arr[i].equals("0")) {
                 arr[i] = "5";
-            }
-            else if(arr[i].equals("5")){
+            } else if (arr[i].equals("5")) {
                 arr[i] = "2";
             }
         }

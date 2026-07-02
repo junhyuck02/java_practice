@@ -1,4 +1,4 @@
-package SelfStudy.Day14;
+package Step1.Day14;
 
 import java.util.Scanner;
 
@@ -9,15 +9,16 @@ public class Solution1 {
 
         for (int i = 1; i < array.length; i++) {
             int diff = Math.abs(array[i] - n);
-        
-       // 거리는 더 가깝고 같으면 더 작은 수로
-        if (diff < minDiff || (diff == minDiff && array[i] < answer)) {
-            minDiff = diff;
-            answer = array[i];
+
+            // 거리는 더 가깝고 같으면 더 작은 수로
+            if (diff < minDiff || (diff == minDiff && array[i] < answer)) {
+                minDiff = diff;
+                answer = array[i];
+            }
         }
-    }
         return answer;
-}
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,15 +26,15 @@ public class Solution1 {
             int size = 0;
             System.out.print("배열의 크기를 입력하세요 (1~100, 0 입력 시 종료): ");
             size = scanner.nextInt();
-            
+
             if (size == 0) {
                 System.out.println("프로그램을 종료합니다.");
-                break; 
+                break;
             }
-            
+
             if (size < 1 || size > 100) {
                 System.out.println("범위를 벗어났습니다. 다시 입력하세요.");
-                continue; 
+                continue;
             }
 
             int[] array = new int[size];
@@ -52,7 +53,7 @@ public class Solution1 {
             while (true) {
                 System.out.print("비교할 정수 n을 입력하세요 (1~100): ");
                 n = scanner.nextInt();
-                if (n >= 1 && n <= 100) 
+                if (n >= 1 && n <= 100)
                     break;
                 System.out.println("범위를 벗어났습니다. 다시 입력하세요.");
             }

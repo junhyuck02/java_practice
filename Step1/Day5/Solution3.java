@@ -1,4 +1,4 @@
-package SelfStudy.Day5;
+package Step1.Day5;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ public class Solution3 {
         int answer = 2022 - age + 1;
         return answer;
     }
+
     public static void main(String[] args) {
         int age = 0, year = 0;
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +16,7 @@ public class Solution3 {
             System.out.print("나이를 입력하세요: ");
             age = scanner.nextInt();
 
-            if(age <= 120  && age > 0){
+            if (age <= 120 && age > 0) {
                 year = new Solution3().solution(age);
                 break;
             } else {

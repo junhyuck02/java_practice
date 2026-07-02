@@ -1,4 +1,4 @@
-package SelfStudy.Day16;
+package Step1.Day16;
 
 public class Solution2 {
     public int[] solution(int[] array) {

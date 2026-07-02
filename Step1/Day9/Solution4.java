@@ -1,4 +1,4 @@
-package SelfStudy.Day9;
+package Step1.Day9;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class Solution4 {
     public long solution(int balls, int share) {
         share = Math.min(balls - share, share);
 
-        if (share == 0){
+        if (share == 0) {
             return 1;
         }
 
@@ -18,18 +18,18 @@ public class Solution4 {
 
         return result;
     }
-    
+
     public static void main(String[] args) {
         Solution4 sol = new Solution4();
         Scanner scanner = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.print("balls 개수를 입력하세요:");
             int balls = scanner.nextInt();
             System.out.print("share 개수를 입력하세요:");
             int share = scanner.nextInt();
 
-            if(balls >= 1 && balls <= 30 && share >= 1 && share <= 30 && balls >= share){
+            if (balls >= 1 && balls <= 30 && share >= 1 && share <= 30 && balls >= share) {
                 System.out.println(sol.solution(balls, share));
                 break;
             } else {

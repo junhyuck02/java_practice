@@ -1,20 +1,21 @@
-package SelfStudy.Day13;
+package Step1.Day13;
 
 import java.util.Scanner;
 
 public class Solution1 {
     public int solution(String s) {
         int answer = 0;
-        String [] arr = s.split(" ");
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i].equals("Z")){
-                answer = answer - Integer.parseInt(arr[i-1]);
+        String[] arr = s.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals("Z")) {
+                answer = answer - Integer.parseInt(arr[i - 1]);
             } else {
                 answer = answer + Integer.parseInt(arr[i]);
             }
         }
         return answer;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Solution1 sol = new Solution1();

@@ -1,4 +1,4 @@
-package SelfStudy.Day16;
+package Step1.Day16;
 
 public class Solution4 {
     public int solution(String[] s1, String[] s2) {

@@ -1,4 +1,4 @@
-package SelfStudy.Day8;
+package Step1.Day8;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -16,10 +16,9 @@ class Solution {
         while (true) {
             System.out.print("배열의 길이를 입력하세요: ");
             length = scanner.nextInt();
-            if (length >= 2 && length <= 30){
+            if (length >= 2 && length <= 30) {
                 break;
-            }
-            else{
+            } else {
                 System.out.println("다시 입력하세요.");
             }
         }
@@ -32,8 +31,7 @@ class Solution {
                 if (val >= 0 && val <= 1000) {
                     numbers[i] = val;
                     break;
-                }
-                else{
+                } else {
                     System.out.println("다시 입력하세요.");
                 }
             }
@@ -45,10 +43,9 @@ class Solution {
             num1 = scanner.nextInt();
             System.out.print("인덱스 2 입력 : ");
             num2 = scanner.nextInt();
-            if (num1 >= 0 && num1 < num2 && num2 < length){
+            if (num1 >= 0 && num1 < num2 && num2 < length) {
                 break;
-            }
-            else{
+            } else {
                 System.out.println("다시 입력하세요.");
             }
         }

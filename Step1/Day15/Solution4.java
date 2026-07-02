@@ -1,4 +1,4 @@
-package SelfStudy.Day15;
+package Step1.Day15;
 
 import java.util.Arrays;
 import java.util.Scanner;
