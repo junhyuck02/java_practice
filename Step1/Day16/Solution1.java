@@ -1,5 +1,6 @@
 package Step1.Day16;
 
+// !
 public class Solution1 {
     public int solution(String message) {
         int answer = 0;
@@ -8,6 +9,6 @@ public class Solution1 {
             answer++;
         }
         return answer * 2;
-        // 초간단: eturn message.length()*2;
+        // 초간단: return message.length() * 2;
     }
 }
