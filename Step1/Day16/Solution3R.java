@@ -1,7 +1,6 @@
 package Step1.Day16;
 
-// !
-public class Solution3 {
+public class Solution3R {
     public int solution(String my_string) {
         String[] arr = my_string.split(" ");
         // 공백으로 끊어서 10의자리 숫자 이상 예방

@@ -1,7 +1,6 @@
 package Step1.Day16;
 
-// !
-public class Solution1 {
+public class Solution1R {
     public int solution(String message) {
         int answer = 0;
         String[] arr = message.split("");
