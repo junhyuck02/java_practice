@@ -1,7 +1,5 @@
 package Step1.Day7;
 
-import java.util.Scanner;
-
 public class Solution2 {
     public int solution(int angle) {
         if (angle > 0 && angle < 90) {
@@ -16,23 +14,5 @@ public class Solution2 {
             return 0;
         }
 
-    }
-
-    public static void main(String[] args) {
-        int angle = 0;
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.print("각도를 입력하세요: ");
-            angle = scanner.nextInt();
-            if (angle >= 0 && angle <= 360) {
-                Solution2 sol = new Solution2();
-                System.out.println(sol.solution(angle));
-                break;
-            } else {
-                System.out.println("다시 입력하세요.");
-                continue;
-            }
-        }
-        scanner.close();
     }
 }

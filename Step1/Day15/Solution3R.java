@@ -2,14 +2,13 @@ package Step1.Day15;
 
 // import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 // import java.util.Collections;
 // import java.util.HashMap;
 // import java.util.List;
 // import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Solution3 {
+public class Solution3R {
     // 방법 1
     public String solution(String s) {
         return Arrays.stream(s.split(""))
@@ -72,28 +71,4 @@ public class Solution3 {
     // return sb.toString();
     // }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Solution3 sol = new Solution3();
-
-        while (true) {
-            System.out.print("문자열 입력: ");
-            String s = scanner.nextLine();
-
-            if (s.length() == 0 || s.length() >= 1000) {
-                System.out.println("길이는 1 이상 999 이하여야 합니다.");
-                continue;
-            }
-
-            if (!s.equals(s.toLowerCase())) {
-                System.out.println("소문자만 입력해주세요.");
-                continue;
-            }
-
-            System.out.println("결과: " + sol.solution(s));
-            break;
-        }
-
-        scanner.close();
-    }
 }

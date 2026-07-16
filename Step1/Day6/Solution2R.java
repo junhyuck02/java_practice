@@ -2,7 +2,7 @@ package Step1.Day6;
 
 import java.util.Scanner;
 
-public class Solution2 {
+public class Solution2R {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

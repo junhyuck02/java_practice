@@ -3,7 +3,7 @@ package Step1.Day12;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution2 {
+public class Solution2R {
 
     public int[] solution(String my_string) {
         int[] answer = {};
@@ -35,7 +35,7 @@ public class Solution2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution2 sol = new Solution2();
+        Solution2R sol = new Solution2R();
         String input = "";
 
         while (true) {

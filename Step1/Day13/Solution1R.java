@@ -2,7 +2,7 @@ package Step1.Day13;
 
 import java.util.Scanner;
 
-public class Solution1 {
+public class Solution1R {
     public int solution(String s) {
         int answer = 0;
         String[] arr = s.split(" ");
@@ -18,9 +18,10 @@ public class Solution1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution1 sol = new Solution1();
+        Solution1R sol = new Solution1R();
         String input = "";
 
+        // 이 부분 복습
         while (true) {
             System.out.println("문자열 s를 입력하세요 (숫자, 'Z', 공백으로 구성):");
             input = scanner.nextLine();

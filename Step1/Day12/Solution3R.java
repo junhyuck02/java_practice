@@ -2,7 +2,7 @@ package Step1.Day12;
 
 import java.util.Scanner;
 
-public class Solution3 {
+public class Solution3R {
     public int solution(String my_string) {
         int answer = 0;
         String[] arr = my_string.split("");
@@ -23,7 +23,7 @@ public class Solution3 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution3 sol = new Solution3();
+        Solution3R sol = new Solution3R();
         String input = "";
 
         while (true) {

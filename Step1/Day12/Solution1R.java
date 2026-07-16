@@ -2,7 +2,7 @@ package Step1.Day12;
 
 import java.util.Scanner;
 
-public class Solution1 {
+public class Solution1R {
     public String solution(String my_string) {
         String answer = "";
         if (my_string.contains("a"))
@@ -30,7 +30,7 @@ public class Solution1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution1 sol = new Solution1();
+        Solution1R sol = new Solution1R();
         String my_string = "";
 
         while (true) {

@@ -2,7 +2,7 @@ package Step1.Day15;
 
 import java.util.Scanner;
 
-public class Solution1 {
+public class Solution1R {
     public long solution(String numbers) {
         String number = numbers.replaceAll("zero", "0").replaceAll("one", "1")
                 .replaceAll("two", "2").replaceAll("three", "3")
@@ -15,7 +15,7 @@ public class Solution1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution1 sol = new Solution1();
+        Solution1R sol = new Solution1R();
 
         while (true) {
             System.out.print("문자열 입력 (종료: exit): ");
