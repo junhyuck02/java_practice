@@ -24,6 +24,6 @@ public class Solution1R {
         // Stream<Integer>를 다시 IntStream으로 변환하고 배열로 되돌린다
     }
 
-    // 개 빡친다 ㅏㅏㅏㅏㅏㅏㅏㅏ
+    // ㅁㄹㅁㄹㅁㄹㅁㅁㅁㄹㅁㄹㅁㄹㄹㅁㄹㅁㄹㅁㅁ
 
 }
